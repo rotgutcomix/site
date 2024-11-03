@@ -1,0 +1,207 @@
+body {
+	background-color: #1E0000;
+	background-image: url("twink.gif");
+	color: #BC0000;
+	font-size: 15px;
+	font-family: arial;
+	margin: 0;
+	padding: 0;
+}
+html,body,address,blockquote,div,
+form,fieldset,caption,
+h1,h2,h3,h4,h5,h6,
+hr,ul,li,ol,ul,
+table,tr,td,th,p,img {
+	margin:0;
+	padding:0;
+	border: 0;
+}
+::selection {
+	background:#685A5A;
+	color:#1E0000;
+}
+::-moz-selection {
+	background:#685A5A;
+	color:#1E0000;
+}
+a {
+	color:inherit;
+	text-decoration:inherit;
+	font-weight:inherit;
+}
+a:hover {
+	color:inherit;
+	text-decoration:underline;
+	font-weight:inherit;
+}
+a:active {
+	color:inherit;
+	text-decoration:inherit;
+	font-weight:inherit;
+}
+h1 {
+	font-size:16px;
+	color:#685A5A;
+	position:relative;
+	left:-8px;
+}
+p {
+	margin-top:4px;
+	text-indent:12px;
+}
+.rotty {
+	width:333px;
+	height:135px;
+	background-image:url("rotgut.png");
+	background-size:100%;
+	margin:auto;
+	margin-top:3.5%;
+}
+.main {
+	width: 513px;
+	height:384px;
+	margin:auto;
+	margin-top:48px;
+	background-color:#1E0000;
+	padding:0;
+	border-collapse: collapse;
+}
+.theunbearablefreak {
+	width:100%;
+	height:100%;
+	background-color:#1E0000;
+	background-image:url("freako.png");
+	background-repeat:no-repeat;
+	background-position-x: center;
+	background-position-y: center;
+	z-index:50000;
+	position:absolute;
+	top:0;
+	left:0;
+	pointer-events: none;
+	opacity:0;
+	animation-name:freak;
+	animation-duration:0.15s;
+	animation-direction:reverse;
+	text-align:center;
+}
+#displ {
+	font-size:64px;
+	margin-top:22%;
+}
+@keyframes freak {
+	from {opacity:0}
+	to {opacity:0.9;}
+}
+.movie {
+	color:#685A5A;
+	font-family:arial;
+	font-size:16px;
+	width:512px;
+	height:auto;
+	margin:auto;
+	margin-top:74px;
+	text-align:center;
+	transform:scaleY(2);
+	line-height:0.7;
+}
+.movieass {
+	width:388px;
+	height:33px;
+	margin:auto;
+	margin-top:45px;
+	background-image:url(mobie.png);
+	background-size:100%;
+}
+h2 {
+	font-size:10px;
+	display: inline-block;
+	font-weight:normal;
+}
+.borderl {
+	width:30%;
+	height:100%;
+	z-index:-5;
+	background-image:linear-gradient(to right,rgba(22,0,0,255),rgba(22,0,0,255),rgba(0,0,0,0));
+	position:absolute;
+	left:0;
+	top:0;
+}
+.borderr {
+	width:30%;
+	height:100%;
+	z-index:-5;
+	background-image:linear-gradient(to left,rgba(22,0,0,255),rgba(22,0,0,255),rgba(0,0,0,0));
+	position:absolute;
+	right:0;
+	top:0;
+}
+
+/* critters */
+.crittersBox {
+	width:256px;
+	height:384px;
+	background-color:red;
+	float:left;
+	outline:1px solid #685A5A;
+}
+.tile {
+	width:128px;
+	height:128px;
+	float:left;
+	outline:1px solid #685A5A;
+	filter:grayscale(0);
+	-webkit-filter:grayscale(0);
+}
+.tile:hover {
+	filter:grayscale(100%);
+	-webkit-filter:grayscale(100%);
+}
+.tile:hover + .theunbearablefreak {
+	display:block;
+}
+
+/* news */
+.newsBox {
+	width:256px;
+	height:384px;
+	outline:1px solid #685A5A;
+	float:right;
+}
+.supernews {
+	height:334px;
+	width:auto;
+	overflow-y:scroll;
+	background-color:#1E0000;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	padding-left:18px;
+	padding-right:18px;
+	padding-top:18px;
+}
+.supernews::-webkit-scrollbar {
+	display:none;
+}
+.newsheader {
+	height:32px;
+	width:auto;
+	background-color:#BC0000;
+	font-family:impact;
+	color:#1E0000;
+	text-align:center;
+	border-bottom:1px solid #685A5A;
+}
+.newsheaderskew {
+	transform:skewX(17deg);
+	margin:0;
+	font-size:40px;
+	position:relative;
+	bottom:8px;
+}
+.updateme {
+	width:auto;
+	height:auto;
+	margin-bottom:24px;
+	text-align:justify;
+	text-justify:inter-word;
+}
