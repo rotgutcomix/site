@@ -9,16 +9,19 @@
 <body>
 	<div class="borderl"></div>
 	<div class="borderr"></div>
-	<div class="rotty"></div>
+
+	<div class="rotty">
+		<a href="index.html"><div class="speakers"><img src="speakerL.gif"><img src="speakerR.gif"></div></a>
+	</div>
 	
 	<div class="main">
 		<div class="crittersBox">
-				<a href="https://www.socialsmokers.net"><img src="tile1.png" class="tile"></a>
-				<a href="https://twitter.com/video_junk"><img src="tile2.png" class="tile"></a>
-				<a href="https://twitter.com/deppingdots"><img src="tile3.png" class="tile"></a>
-				<a href="https://www.roblox.com/games/27427994/cumstains-Place"><img src="tilePH.png" class="tile"></a>
-				<a href="https://www.roblox.com/games/27427994/cumstains-Place"><img src="tilePH.png" class="tile"></a>
-				<a href="rot.html"><img src="tilePH.png" class="tile"></a>
+				<a onclick="playAudio()" target="blank_" href="https://www.socialsmokers.net"><img src="tile1.png" class="tile"></a>
+				<a onclick="playAudio()" target="blank_" href="https://www.newgrounds.com/playlist/311697/bunker-city-comics"><img src="tile2.png" class="tile"></a>
+				<a onclick="playAudio()" target="blank_" href="https://twitter.com/deppingdots"><img src="tile3.png" class="tile"></a>
+				<a onclick="playAudio()" target="blank_" href="https://www.roblox.com/games/27427994/cumstains-Place"><img src="tilePH.png" class="tile"></a>
+				<a onclick="playAudio()" target="blank_" href="https://www.roblox.com/games/27427994/cumstains-Place"><img src="tilePH.png" class="tile"></a>
+				<a onclick="playAudio()" target="blank_" href="rot.html"><img src="tilePH.png" class="tile"></a>
 		</div>
 		<div class="newsBox">
 			<div class="newsheader"><p class="newsheaderskew">NEWS</p></div>
@@ -47,8 +50,8 @@
 	
 	<div class="movie">
 	CHANNEL AWESOME <h2>Presents</h2> <h2>A</h2> DOUG WALKER <h2>Film</h2> ROTGUT
-	<p><a href="https://www.socialsmokers.net">BERNIE</a> <a href="https://twitter.com/video_junk">VIDEOJUNK</a> <a href="https://twitter.com/deppingdots">DEPPINGDOTS</a> PAL FOUR PAL FIVE</p>
-	<p><h2>Directed by</h2> DOUG WALKER <h2>Site Design by</h2> <a href="https://acidattackeverything.neocities.org">UNTRUE</a></p>
+	<p><a onclick="playAudio()" target="blank_" href="https://www.socialsmokers.net">BERNIE</a> <a onclick="playAudio()" target="blank_" href="https://twitter.com/video_junk">VIDEOJUNK</a> <a onclick="playAudio()" target="blank_" href="https://twitter.com/deppingdots">DEPPINGDOTS</a> PAL FOUR PAL FIVE</p>
+	<p><h2>Directed by</h2> DOUG WALKER <h2>Site Design by</h2> <a target="blank_" href="https://acidattackeverything.neocities.org">UNTRUE</a></p>
 	<p><h2>Written by</h2> DOUG WALKER <h2>Produced by</h2> DOUG WALKER</p>
 	</div>
 	<div class="movieass"></div>
@@ -57,7 +60,7 @@
 		<p id="displ"></p>
 	</div>
 	
-	<script>
+<script>
 	<!-- cool script by cmprogram on stackoverflow! -->
 	const newspeak = ["BUY", "SWALLOW", "PISS YOURSELF", "KILL", "MURDER", "TURN GAY", "BREATHE MANUALLY", "BUTTPLUG", "ITCH YOUR ASS", "SHOWER"];
 
@@ -65,6 +68,14 @@
 		const randomNewspeak = Math.floor(Math.random() * newspeak.length);
 		document.getElementById('displ').innerHTML = newspeak[randomNewspeak];
 	}();
-	</script>
+</script>
+	<audio id="audio" src="ding.wav"></audio>
+<script>
+	<!-- cool script by KurniawanRizky on stackoverflow! -->
+	function playAudio() {
+		var audio = document.getElementById("audio");
+		audio.play();
+	}
+</script> 
 </body>
 </html>
