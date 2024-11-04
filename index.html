@@ -11,7 +11,9 @@
 	<div class="borderr"></div>
 
 	<div class="rotty">
-		<a href="index.html"><div class="speakers"><img src="speakerL.gif"><img src="speakerR.gif"></div></a>
+		<div class="speakers">
+			<img onclick="playAudio2()" src="speakerL.gif"><img onclick="playAudio2()" src="speakerR.gif">
+		</div>
 	</div>
 	
 	<div class="main">
@@ -21,10 +23,10 @@
 				<a onclick="playAudio()" target="blank_" href="https://twitter.com/deppingdots"><img src="tile3.png" class="tile"></a>
 				<a onclick="playAudio()" target="blank_" href="https://www.roblox.com/games/27427994/cumstains-Place"><img src="tilePH.png" class="tile"></a>
 				<a onclick="playAudio()" target="blank_" href="https://www.roblox.com/games/27427994/cumstains-Place"><img src="tilePH.png" class="tile"></a>
-				<a onclick="playAudio()" target="blank_" href="rot.html"><img src="tilePH.png" class="tile"></a>
+				<a onclick="playAudio()" href="zine.html"><img src="tilePH.png" class="tile"></a>
 		</div>
 		<div class="newsBox">
-			<div class="newsheader"><p class="newsheaderskew">NEWS</p></div>
+			<div class="newsheader"><p>NEWS</p></div>
 			<div class="supernews">
 				<div class="updateme">
 					<h1>4/21/2028</h1>
@@ -75,6 +77,14 @@
 	function playAudio() {
 		var audio = document.getElementById("audio");
 		audio.play();
+	}
+</script> 
+	<audio id="audio2" src="theme.wav" loop ></audio>
+<script>
+	<!-- cool script by KurniawanRizky on stackoverflow! -->
+	function playAudio2() {
+		var audio2 = document.getElementById("audio2");
+		audio2.play();
 	}
 </script> 
 </body>

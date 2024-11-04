@@ -45,10 +45,6 @@ h1 {
 	position:relative;
 	left:-8px;
 }
-p {
-	margin-top:4px;
-	text-indent:12px;
-}
 .rotty {
 	width:333px;
 	height:135px;
@@ -64,7 +60,7 @@ p {
 	-webkit-filter:grayscale(100%);
 }
 .speakers {
-	width:100%;
+	width:333px;
 	height:106px;
 	margin:auto;
 	position:relative;
@@ -74,11 +70,13 @@ p {
 	float:left;
 	position:relative;
 	left:-40px;
+	cursor:crosshair;
 }
 .speakers img:last-child {
 	float:right;
 	position:relative;
 	right:-20px;
+	cursor:crosshair;
 }
 .main {
 	width: 513px;
@@ -127,6 +125,10 @@ p {
 	text-align:center;
 	transform:scaleY(2);
 	line-height:0.7;
+}
+.movie p {
+	margin-top:4px;
+	text-indent:12px;
 }
 .movieass {
 	width:388px;
@@ -180,9 +182,6 @@ h2 {
 	filter:grayscale(100%);
 	-webkit-filter:grayscale(100%);
 }
-.tile:hover + .theunbearablefreak {
-	display:block;
-}
 
 /* news */
 .newsBox {
@@ -202,6 +201,10 @@ h2 {
 	padding-right:18px;
 	padding-top:18px;
 }
+.supernews p {
+	margin-top:4px;
+	text-indent:12px;
+}
 .supernews::-webkit-scrollbar {
 	display:none;
 }
@@ -214,7 +217,7 @@ h2 {
 	text-align:center;
 	border-bottom:1px solid #685A5A;
 }
-.newsheaderskew {
+.newsheader p {
 	transform:skewX(17deg);
 	margin:0;
 	font-size:40px;
@@ -227,4 +230,81 @@ h2 {
 	margin-bottom:24px;
 	text-align:justify;
 	text-justify:inter-word;
+}
+
+/*=======*/
+/* zines */
+/*=======*/
+
+.zinerow {
+	width:100%;
+	height:256px;
+}
+.zineframe {
+	width:576px;
+	height:548px;
+	background-color:#1E0000;
+	margin:auto;
+	border:1px solid #685A5A;
+	padding:0;
+	overflow-y:scroll;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+.zinetile {
+	width:192px;
+	height:256px;
+	outline:1px solid #685A5A;
+	float:left;
+	filter:grayscale(0);
+	-webkit-filter:grayscale(0);
+}
+.zinetile:hover {
+	filter:grayscale(100%);
+	-webkit-filter:grayscale(100%);
+}
+.zineheader {
+	margin:auto;
+	margin-top:76px;
+	width:576px;
+	height:64px;
+	background-color:#BC0000;
+	outline:1px solid #685A5A;
+	text-align:center;
+}
+.zineheader p {
+	transform:skewX(17deg);
+	font-size:80px;
+	color:#1E0000;
+	font-family:impact;
+	position:relative;
+	bottom:18px;
+}
+.zinefooter {
+	width:100%;
+	height:36px;
+	text-align:center;
+	overflow:hidden;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-size:16px;
+}
+.minirotty {
+	width:196px;
+	height:80px;
+	background-image:url("rotgut.png");
+	background-size:100%;
+	margin:auto;
+	margin-top:64px;
+	filter:grayscale(0);
+	-webkit-filter:grayscale(0);
+}
+.minirotty:hover {
+	filter:grayscale(100%);
+	-webkit-filter:grayscale(100%);
+}
+.ling {
+	width:100%;
+	height:100%;
 }
