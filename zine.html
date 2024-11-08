@@ -12,26 +12,38 @@
 	
 	<div class="zineheader">
 		<p>ZINEZ</p>
+		<div title="Hej! Jag heter Bunny Boof och jag gillar att röka gräs med mina vänner! Vill du vara min vän?" class="bunnyboof"></div>
 	</div>
 	<div class="zineframe">
 		<div class="zinerow">
-			<a target="blank_" href="https://www.youtube.com/watch?v=V_5uYoOaVtM"><img src="piranha.png" class="zinetile"></a>
-			<a target="blank_" href="https://www.youtube.com/watch?v=V_5uYoOaVtM"><img src="piranha.png" class="zinetile"></a>
-			<a target="blank_" href="https://www.youtube.com/watch?v=V_5uYoOaVtM"><img src="piranha.png" class="zinetile"></a>
+			<a onclick="playAudio()" target="blank_" href="https://www.youtube.com/watch?v=V_5uYoOaVtM"><img src="piranha.png" class="zinetile"></a>
+			<a onclick="playAudio()" target="blank_" href="https://www.youtube.com/watch?v=V_5uYoOaVtM"><img src="piranha.png" class="zinetile"></a>
+			<a onclick="playAudio()" target="blank_" href="https://www.youtube.com/watch?v=V_5uYoOaVtM"><img src="piranha.png" class="zinetile"></a>
 		</div>
 		<div class="zinerow">
-			<a target="blank_" href="https://www.youtube.com/watch?v=V_5uYoOaVtM"><img src="piranha.png" class="zinetile"></a>
-			<a target="blank_" href="https://www.youtube.com/watch?v=V_5uYoOaVtM"><img src="piranha.png" class="zinetile"></a>
-			<a target="blank_" href="https://www.youtube.com/watch?v=V_5uYoOaVtM"><img src="piranha.png" class="zinetile"></a>
-		</div>
-		<div class="zinerow">
-			<a target="blank_" href="https://www.youtube.com/watch?v=V_5uYoOaVtM"><img src="piranha.png" class="zinetile"></a>
+			<a onclick="playAudio()" target="blank_" href="https://www.youtube.com/watch?v=V_5uYoOaVtM"><img src="piranha.png" class="zinetile"></a>
 		</div>
 		<div class="zinefooter">
 			<p>( more to come )</p>
 		</div>
 	</div>
 	
-	<div class="minirotty"><a href="index.html"><div class="ling"></div></a></div>
+	<div class="minirotty">
+		<a href="index.html">
+			<div class="ling"></div>
+			<div class="minireturn">
+				<p>↩ ↩ ↩</p>
+			</div>
+		</a>
+	</div>
+	
+	<audio id="audio" src="ding.wav"></audio>
+<script>
+	<!-- cool script by KurniawanRizky on stackoverflow! -->
+	function playAudio() {
+		var audio = document.getElementById("audio");
+		audio.play();
+	}
+</script>
 </body>
 </html>
